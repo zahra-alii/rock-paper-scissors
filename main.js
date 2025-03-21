@@ -28,8 +28,8 @@ function playRound (playerChoice, botChoice){
 function playGame(){
     for (let i = 0 ; i < 5; i++){
         const botChoice = getBotChoice();
-        const playerChoice = prompt("Choose what to throw", 'Rock, Paper, Scissors').toLowerCase(); // makes param case sensative
-        playRound(playerChoice, botChoice);
+        const playerChoice = prompt("Choose what to throw", 'Rock, Paper, Scissors').toLowerCase(); // set playChoice = to prompt, make param case sensative
+        playRound(playerChoice, botChoice); // call func
     }
 
     if(playerScore > botScore){
